@@ -18,8 +18,8 @@ yarn-error.log
 
 /coverage
 .idea
-yarn.lock
-package-lock.json
+# yarn.lock
+# package-lock.json
 *bak
 .vscode
 
@@ -45,3 +45,12 @@ build
 **/.umi-production
 /frontend/build
 /frontend/dist
+
+
+# backend
+**/logs/
+**/npm-debug.log
+**/node_modules/
+**/coverage/
+backend/run/
+*.swp

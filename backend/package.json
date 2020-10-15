@@ -1,0 +1,47 @@
+{
+  "name": "vc-admin",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "egg": "^2.10.0",
+    "egg-sequelize": "^5.0.1",
+    "mysql2": "^1.6.1"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "egg-bin": "^4.8.1",
+    "egg-mock": "^3.19.2",
+    "factory-girl": "^5.0.2",
+    "lodash": "^4.17.10",
+    "sequelize-cli": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "autod": "autod",
+    "lint": "eslint .",
+    "dev": "egg-bin dev",
+    "test": "egg-bin test",
+    "cov": "egg-bin cov",
+    "ci": "npm run lint && NODE_ENV=test npx sequelize db:migrate && npm run cov",
+    "sequelize": "sequelize --"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "eslintIgnore": [
+    "coverage",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "author": "",
+  "private": true
+}
